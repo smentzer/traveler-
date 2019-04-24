@@ -14,8 +14,11 @@ a {
     padding: 40px 80px;
     position: relative;
     overflow: hidden;
-    text-shadow: #fffafa 1px 0 10px;
-    /* text-shadow: 2px 2px #fffafa; */
+   
+   
+}
+a:hover {
+     text-shadow: #A9A9A9 1px 0 10px;
 }
 
 a:before {
@@ -23,15 +26,17 @@ a:before {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url(clip.png);
+    background-image: url(../images/clip.png);
     height: 100%;
     width: 100%;
     z-index: -1;
     transform-origin: bottom left;
     transform: rotate(-90deg);
     transition: transform 1s;
+
 }
 
 a:hover:before {
     transform: rotate(0deg);
+
 }

@@ -1,0 +1,65 @@
+/* colors used
+ #fffafa
+ #addfad
+ #9fe2bf
+ #A9A9A9
+ #E0E0E0
+
+ */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.7;
+  padding: 3rem;
+  background-color:  #fffafa;
+}
+
+.header {
+    height: 15vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(159, 226, 191, 0.6),
+        rgba(173, 223, 173, 0.6)
+      ),
+      url(../images/2clip.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    -webkit-clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 88%, 0 100%, 0 0);
+  padding-bottom: 10rem;
+  }
+
+.section-preview {
+    background-color: #E0E0E0;
+    padding: 5rem 0;
+    margin-top: -10vh;
+    height: 100vh;
+	display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+	align-items: center;
+
+  }
+
+
+.card {
+      background-color: #9fe2bf;
+      height: 50rem;
+      transition: all .8s;
+  }
+
+.card:hover {
+    transform: rotateY(180deg);
+}
