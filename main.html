@@ -14,39 +14,91 @@
     />
     <!-- favicon -->
     <link rel="icon" type="image/ico" href="assets/images/favicon.ico" />
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
   </head>
 
   <body>
+
+     <!-- dropdown container -->
+<div class="drop">
+
+    <!-- trigger button -->
+    <img onclick="myFunction()" class="dropbtn logo" src="assets/images/favicon.ico" alt="logo" width="42" height="42">
+
+    <!-- dropdown menu -->
+    <div id="myDropdown" class="content">
+      <a href="https://www.instagram.com/aesth31/?hl=en"><img src="assets/images/instagram.png" alt="instagram" width="42" height="42"></a>
+    </div>
+</div>
+      
     <header class="header"></header>
+
+       
+
+    </header>
 
     <main>
       <section class="section-preview">
-
         <div class="col-1">
           <div class="card">
-              <div class="card__side">
-                  TEXT
-              </div>
+            <div class="card__side card_side--front">
+            
             </div>
+            <div class="card__side card_side--back">
+         
+            </div>
+          </div>
         </div>
 
         <div class="col-2">
-                <div class="card">
-                        <div class="card__side">
-                            TEXT
-                        </div>
-                      </div>
-                      </div>
+          <div class="card">
+            <div class="card__side">
+         
+            </div>
+          </div>
+        </div>
 
         <div class="col-3">
-                <div class="card">
-                        <div class="card__side">
-                            TEXT
-                        </div>
-                      </div>
-                      </div>
-
+          <div class="card">
+            <div class="card__side">
+           
+            </div>
+          </div>
+        </div>
       </section>
     </main>
+
+
+  
+
+ 
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+   
+
   </body>
 </html>
